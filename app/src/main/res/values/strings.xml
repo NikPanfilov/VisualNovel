@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">VisualNovel</string>
+    <string name="my_visual_novel">Моя визуальная новелла</string>
+    <string name="begin">Начать</string>
+    <string name="hello">Привет! Меня зовут Кирюша. А тебя?</string>
+    <string name="confirm">Подтвердить</string>
+    <string name="enter_name"><i>Введите своё имя...</i></string>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Basic">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="fontFamily">@font/roboto</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="Text" parent="Basic">
+        <item name="android:letterSpacing">0.02</item>
+        <item name="android:background">#275168</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="Button" parent="Basic">
+        <item name="android:backgroundTint">#73AAC7</item>
+    </style>
+    <style name="ActivityAnim">
+        <item name="android:activityOpenEnterAnimation">@anim/dock_right_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/dock_right_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/dock_bottom_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/dock_bottom_exit</item>
+    </style>
+</resources>
