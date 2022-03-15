@@ -1,14 +1,10 @@
-package com.example.visualnovel
+package com.example.visualnovel.model
 
 import android.content.Context
-import android.content.Intent
 import kotlinx.serialization.decodeFromString
 import kotlinx.serialization.json.Json
-import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContextCompat.startActivity
-import kotlinx.serialization.json.decodeFromStream
 
-class Transition(gameContext: Context) {
+class ScenesLoad(gameContext: Context) {
     private val scenes:List<Scene>
     private var current=0
     private val context = gameContext
@@ -18,13 +14,17 @@ class Transition(gameContext: Context) {
     }
 
     private fun loadJSON(): String {
-        return context.resources.assets.open("screens.json").bufferedReader().use { it.readText() }
+        return context.resources.assets.open(JSON_FILENAME).bufferedReader().use { it.readText() }
     }
-    fun playerChoice(next:Int):Scene{
+    fun playerChoice(next:Int): Scene {
         current=scenes[current].choices[next].nextIndex.toInt()
         if (current==-1){
             return scenes[0]
         }
         return scenes[current]
+    }
+
+    companion object {
+        private const val JSON_FILENAME="screens.json"
     }
 }

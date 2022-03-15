@@ -1,4 +1,4 @@
-package com.example.visualnovel
+package com.example.visualnovel.model
 
 import kotlinx.serialization.Serializable
 
@@ -7,5 +7,5 @@ data class Choices(val text:String,val nextIndex:String){
 
 }
 @Serializable
-data class Scene(val id:Int,val image:String,val message:String,val choices:List<Choices>)
+data class Scene(val id:Int,val image:String, val message:String, val choices:List<Choices>)
 

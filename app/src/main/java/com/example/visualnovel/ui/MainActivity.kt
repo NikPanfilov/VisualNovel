@@ -1,8 +1,9 @@
-package com.example.visualnovel
+package com.example.visualnovel.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.visualnovel.R
 import com.example.visualnovel.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -11,10 +12,10 @@ class MainActivity : AppCompatActivity() {
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val end:Int=intent.getIntExtra("end",0)
-        if(end==1){
-            binding.myVisualNovel.text="Спасибо, что поиграли"
-            binding.begin.text="Пройти ещё раз"
+        val gamePassed=intent.getBooleanExtra("gameOver",false)
+        if(gamePassed){
+            binding.myVisualNovel.text= getString(R.string.gratitude)
+            binding.begin.text=getString(R.string.go_game_again)
         }
 
         binding.begin.setOnClickListener {
