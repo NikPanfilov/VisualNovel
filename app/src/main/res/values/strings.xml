@@ -5,4 +5,7 @@
     <string name="hello">Привет! Меня зовут Кирюша. А тебя?</string>
     <string name="confirm">Подтвердить</string>
     <string name="enter_name"><i>Введите своё имя...</i></string>
+    <string name="go_game_again">Пройти ещё раз</string>
+    <string name="gratitude">Спасибо, что поиграли</string>
+    <string name="empty_name">Пожалуйста, введи имя!</string>
 </resources>
