@@ -11,10 +11,12 @@
         android:theme="@style/Theme.VisualNovel">
         <activity
             android:name=".ui.GameActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".ui.NamingActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".ui.MainActivity"
             android:exported="true"
